@@ -1,4 +1,4 @@
-Shader "Custom/Part5/Chapter4/LerpShader"
+Shader "Custom/Part5/Chapter4/AlphaLerpShader"
 {
     Properties
     {
@@ -35,10 +35,14 @@ Shader "Custom/Part5/Chapter4/LerpShader"
             fixed4 c1 = tex2D(_MainTex, IN.uv_MainTex);
             fixed4 c2 = tex2D(_MainTex2, IN.uv_MainTex2);
 
-            // o.Albedo = c.rgb;
-            fixed4 c = lerp(c1, c2, _LerpValue).rgba;
-            o.Albedo = c.rgb;
-            o.Alpha = c.a;
+            // Alpha Lerp 1
+            // o.Albedo = c2 * c1.a + c1 * (1 - c1.a);
+            // o.Albedo = lerp(c1, c2, c1.a);
+
+            // Alpha Lerp 2
+            // o.Albedo = c1 * c1.a + c2 * (1 - c1.a);
+            o.Albedo = lerp(c1, c2, 1 - c1.a);
+            o.Alpha = 0;
         }
         ENDCG
     }

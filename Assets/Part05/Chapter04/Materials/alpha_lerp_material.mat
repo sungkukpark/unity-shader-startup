@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: lerp_material
-  m_Shader: {fileID: 4800000, guid: 7f47aed449d9a7f4f9385cdb015dcc24, type: 3}
+  m_Name: alpha_lerp_material
+  m_Shader: {fileID: 4800000, guid: 823213302ebfb6b41bb24b3422d898ca, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []

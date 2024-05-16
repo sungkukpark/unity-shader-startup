@@ -13,7 +13,7 @@ Shader "Custom/Part5/Chapter1/RenderTextureOnly"
 
         CGPROGRAM
         // Physically based Standard lighting model, and enable shadows on all light types
-        #pragma surface surf Standard fullforwardshadows
+        #pragma surface surf Standard
 
         sampler2D _MainTex;
 

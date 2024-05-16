@@ -1,4 +1,4 @@
-Shader "Custom/Part5/Chapter1/RenderTextureOnly"
+Shader "Custom/Part5/Chapter3/NoirShader"
 {
     Properties
     {
